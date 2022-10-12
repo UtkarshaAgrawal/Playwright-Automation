@@ -46,6 +46,7 @@ test("", async ({ page }) => {
   await page.locator("(//input[@type='text'])[2]").fill("Anshika Samesun");
   await page.locator(".action__submit").click();
   //await page.pause();
+  //ex comment
   const orderId = await page
     .locator(".em-spacer-1 .ng-star-inserted")
     .textContent();
